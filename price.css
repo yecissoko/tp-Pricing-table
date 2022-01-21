@@ -1,0 +1,124 @@
+*, 
+::before, 
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-background: #F0EDED;
+    --color-background-title: #E4E4E4;
+    --color-background-price: #F6F6F6;
+    --green: #2ECC71;
+    --light-grey: #A7A7A7;
+    --grey: #A9A9A9;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--color-background);
+}
+
+h1 {
+    margin: 3rem  0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+a.btn-signup {
+    display: inline-block;
+    text-decoration: none;
+    width: 140px;
+    height: 60px;
+    border: 1px solid var(--green);
+    color: var(--green);
+    border-radius: 40px;
+    text-align: center;
+    line-height: 3.75rem;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+a.btn-signup:hover {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.products {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.products .product {
+    width: 30%;
+    min-width: 300px;
+    margin: 1rem 0;
+}
+
+.product .product-detail {
+    background-color: var(--color-background-price);
+}
+
+.product h2{
+    display: table;
+    width: 100%;
+    height: 100px;
+    text-transform: uppercase;
+    background-color: var(--color-background-title);
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.product h2 span {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.product-price {
+   height: 100px;
+   font-family: 'Lato', sans-serif;
+   font-size: 3.5rem;
+   letter-spacing: 0.2rem;
+}
+
+.product-price .price-info {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.product-content {
+    background-color: var(--white);
+}
+
+.product-content .product-description {
+    list-style-type: none;
+    font-weight: 500;
+}
+
+.product-content li {
+    list-style-type: none;
+    color: var(--grey);
+    padding: 20px 0;
+}
+
+.product-content li .data {
+    color: var(--black);
+    font-weight: bolder;
+}
+
+.product:nth-child(2) h2, 
+.product:nth-child(2) a.btn-signup {
+    background-color:var(--green);
+    color: var(--white);
+}
